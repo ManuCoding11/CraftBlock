@@ -173,3 +173,22 @@ for metal in metals {
 mods.embers.Mixer.remove(<liquid:oil_dwarf> * 10);
 mods.embers.Mixer.remove(<liquid:oil_dwarf> * 30);
 mods.immersiveengineering.Refinery.addRecipe(<liquid:oil_dwarf> * 8, <liquid:oil_soul> * 16, <liquid:biodiesel> * 8, 16000);
+
+// Primal Aspectus recipe
+mods.astralsorcery.Altar.addTraitAltarRecipe("contenttweaker:aspectus_primal", <contenttweaker:aspectus_primal>, 4500, 600, [
+    <ore:nuggetManyullyn>, <immersiveengineering:material:18>, <ore:nuggetManyullyn>,
+    null, <embers:inflictor_gem>, null,
+    <ore:nuggetManyullyn>, <immersiveengineering:material:18>, <ore:nuggetManyullyn>,
+
+    null, null, null, null,
+
+    null, null, null, null,
+    null, null, null, null,
+
+    <ore:nuggetManyullyn>, null, null, <ore:nuggetManyullyn>,
+
+    <embers:aspectus_iron>, <embers:aspectus_copper>, <embers:aspectus_lead>, <embers:aspectus_silver>, <embers:aspectus_dawnstone>
+]);
+
+// Add Primal Aspectus to alchemy aspects
+mods.embers.Alchemy.addAspect("primal", <contenttweaker:aspectus_primal>);
